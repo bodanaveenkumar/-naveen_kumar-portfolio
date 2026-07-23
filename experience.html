@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Experience — Boda Naveen Kumar</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="index.html" class="nav-logo">Naveen<span>.</span></a>
+  <div class="nav-links" id="nav-links">
+    <a href="index.html">Home</a>
+    <a href="experience.html" class="active">Experience</a>
+    <a href="projects.html">Projects</a>
+    <a href="education.html">Education</a>
+    <a href="photos.html">Photos</a>
+    <a href="index.html#contact">Contact</a>
+  </div>
+  <button class="nav-toggle" onclick="toggleNav()" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+</nav>
+
+<main>
+<div class="page-hero">
+  <div class="page-hero-bg"></div>
+  <div class="section-label">Where I've worked</div>
+  <h1 class="section-title">Experience</h1>
+  <div class="section-divider" style="background: var(--pink)"></div>
+</div>
+
+<section class="tight-top">
+  <div class="exp-card">
+    <div class="exp-header">
+      <div>
+        <div class="exp-title">RTL Design and Verification Trainee</div>
+        <div class="exp-company">VLSI For All Pvt Ltd — Industry Training & Internship Program (Remote)</div>
+      </div>
+      <div class="exp-date">Oct 2025 – Mar 2026</div>
+    </div>
+    <ul class="exp-bullets">
+      <li>Developed UVM testbench components (generator, driver, monitor, scoreboard) in SystemVerilog across 5+ protocol-based training projects covering AXI, AHB, APB, I2C, and SPI interfaces.</li>
+      <li>Achieved 80%+ functional coverage using constrained-random verification and coverage-driven methodology for multiple interface protocols.</li>
+      <li>Reduced bug identification time by 25% using waveform debug in Synopsys VCS, resolving RTL issues faster than manual inspection.</li>
+      <li>Optimized regression testing and analyzed coverage reports, closing 15% additional gaps and surfacing corner-case failures within multiple protocol design blocks.</li>
+      <li>Completed 6-month program covering UVM sequences, reusable agents, and VIP components through the full verification lifecycle.</li>
+    </ul>
+  </div>
+</section>
+</main>
+
+<footer>
+  <p style="margin-bottom:6px;">Boda Naveen Kumar &mdash; Design Verification Engineer</p>
+  <p>Built with ❤️ &mdash; 2026</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

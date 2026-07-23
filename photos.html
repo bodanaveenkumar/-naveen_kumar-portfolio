@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Photos — Boda Naveen Kumar</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="index.html" class="nav-logo">Naveen<span>.</span></a>
+  <div class="nav-links" id="nav-links">
+    <a href="index.html">Home</a>
+    <a href="experience.html">Experience</a>
+    <a href="projects.html">Projects</a>
+    <a href="education.html">Education</a>
+    <a href="photos.html" class="active">Photos</a>
+    <a href="index.html#contact">Contact</a>
+  </div>
+  <button class="nav-toggle" onclick="toggleNav()" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+</nav>
+
+<main>
+<div class="page-hero">
+  <div class="page-hero-bg"></div>
+  <div class="section-label">My life in pictures</div>
+  <h1 class="section-title">Instagram photos</h1>
+  <div class="section-divider" style="background: var(--pink)"></div>
+</div>
+
+<section class="tight-top">
+  <div class="photos-intro">
+    📸 To add your Instagram photos, click <strong>"Add photos"</strong> below and paste your image URLs — one per line. You can get URLs by right-clicking any photo on instagram.com → "Copy image address". Or download your photos from Instagram and host them on a free service like <a href="https://imgbb.com" target="_blank" style="color:var(--blue)">imgbb.com</a> to get URLs.
+  </div>
+  <div class="photo-grid" id="photo-grid">
+    <!-- placeholders -->
+    <div class="photo-item"><div class="photo-placeholder"><svg width="28" height="28" fill="none" viewBox="0 0 24 24" stroke="currentColor"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>Photo</div></div>
+    <div class="photo-item"><div class="photo-placeholder"><svg width="28" height="28" fill="none" viewBox="0 0 24 24" stroke="currentColor"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>Photo</div></div>
+    <div class="photo-item"><div class="photo-placeholder"><svg width="28" height="28" fill="none" viewBox="0 0 24 24" stroke="currentColor"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>Photo</div></div>
+    <div class="photo-item"><div class="photo-placeholder"><svg width="28" height="28" fill="none" viewBox="0 0 24 24" stroke="currentColor"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>Photo</div></div>
+    <div class="photo-item"><div class="photo-placeholder"><svg width="28" height="28" fill="none" viewBox="0 0 24 24" stroke="currentColor"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>Photo</div></div>
+    <div class="photo-item"><div class="photo-placeholder"><svg width="28" height="28" fill="none" viewBox="0 0 24 24" stroke="currentColor"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>Photo</div></div>
+  </div>
+  <button class="add-photo-btn" onclick="toggleUrlInput()">+ Add photos</button>
+  <div class="url-input-area" id="url-input-area">
+    <textarea id="url-textarea" placeholder="Paste your image URLs here, one per line:&#10;https://example.com/photo1.jpg&#10;https://example.com/photo2.jpg"></textarea>
+    <br/>
+    <button class="url-submit-btn" onclick="loadPhotos()">Load photos</button>
+  </div>
+</section>
+</main>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox" onclick="closeLightbox(event)">
+  <button class="lightbox-close" onclick="document.getElementById('lightbox').classList.remove('open')">×</button>
+  <img id="lightbox-img" src="" alt="Photo" />
+</div>
+
+<footer>
+  <p style="margin-bottom:6px;">Boda Naveen Kumar &mdash; Design Verification Engineer</p>
+  <p>Built with ❤️ &mdash; 2026</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

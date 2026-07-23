@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Projects — Boda Naveen Kumar</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="index.html" class="nav-logo">Naveen<span>.</span></a>
+  <div class="nav-links" id="nav-links">
+    <a href="index.html">Home</a>
+    <a href="experience.html">Experience</a>
+    <a href="projects.html" class="active">Projects</a>
+    <a href="education.html">Education</a>
+    <a href="photos.html">Photos</a>
+    <a href="index.html#contact">Contact</a>
+  </div>
+  <button class="nav-toggle" onclick="toggleNav()" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+</nav>
+
+<main>
+<div class="page-hero">
+  <div class="page-hero-bg"></div>
+  <div class="section-label">What I've built</div>
+  <h1 class="section-title">Projects</h1>
+  <div class="section-divider" style="background: var(--teal)"></div>
+</div>
+
+<section class="tight-top">
+  <div class="projects-grid">
+    <div class="project-card">
+      <div class="project-icon" style="background:#EEEDFE;font-size:20px">⚡</div>
+      <div class="project-title">AXI4-Lite Slave Interface</div>
+      <div class="project-date">RTL Design & Functional Verification — Mar 2026</div>
+      <div class="project-desc">Designed AXI4-Lite slave in Verilog with address decoding and register-mapped communication, fully AMBA-compliant. Built UVM-style testbench with 10+ test scenarios reaching 100% channel-type coverage. Caught and resolved 3 RTL compliance violations.</div>
+      <div class="project-tags">
+        <span class="project-tag">#Verilog</span>
+        <span class="project-tag">#AXI4-Lite</span>
+        <span class="project-tag">#UVM</span>
+        <span class="project-tag">#AMBA</span>
+      </div>
+    </div>
+    <div class="project-card">
+      <div class="project-icon" style="background:#E6F1FB;font-size:20px">🔗</div>
+      <div class="project-title">I2C Protocol</div>
+      <div class="project-date">RTL Design & Verification — Jan 2026</div>
+      <div class="project-desc">Designed Verilog RTL for I2C master-slave communication covering read/write cycles, start/stop conditions, and ACK/NACK handling. Class-based SystemVerilog testbench with random-weighted stimulus hitting 80%+ line and toggle coverage.</div>
+      <div class="project-tags">
+        <span class="project-tag">#Verilog</span>
+        <span class="project-tag">#I2C</span>
+        <span class="project-tag">#SystemVerilog</span>
+        <span class="project-tag">#CRV</span>
+      </div>
+    </div>
+    <div class="project-card">
+      <div class="project-icon" style="background:#E1F5EE;font-size:20px">🗂️</div>
+      <div class="project-title">16x8 Synchronous FIFO</div>
+      <div class="project-date">RTL Design & Verification — Oct 2025</div>
+      <div class="project-desc">Implemented synchronous FIFO in Verilog using pointer-based logic with correct full/empty flag assertion. Boosted edge-case coverage by 30% through targeted random stimulus, reaching 85% overall coverage and exposing 2 RTL boundary bugs.</div>
+      <div class="project-tags">
+        <span class="project-tag">#Verilog</span>
+        <span class="project-tag">#FIFO</span>
+        <span class="project-tag">#FunctionalCoverage</span>
+        <span class="project-tag">#EDAPlayground</span>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <p style="margin-bottom:6px;">Boda Naveen Kumar &mdash; Design Verification Engineer</p>
+  <p>Built with ❤️ &mdash; 2026</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
